@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio de Libros</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Directorio de Libros</h1>
+
+    <!-- Formulario para agregar un nuevo libro -->
+    <form id="agregarLibroForm">
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo">
+      </div>
+      <div class="form-group">
+        <label for="autor">Autor</label>
+        <input type="text" class="form-control" id="autor" name="autor">
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar Libro</button>
+    </form>
+
+    <!-- Tabla para mostrar la lista de libros -->
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="librosList">
+        <!-- Aquí se llenarán los datos de los libros con JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="frontend.js"></script>
+</body>
+</html>
+
